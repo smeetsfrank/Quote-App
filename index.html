@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/styles/general.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/5469a3a7a2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="menu-trigger">
+      <input type="checkbox" id="trigger" />
+      <label for="trigger">
+        <div class="nav-icon">
+          <div></div>
+        </div>
+      </label>
+    </div>
+    <nav id="main-nav">
+      <ul>
+        <li><a id="start-game">Guess the quote</a></li>
+        <li class="hidden stop-game"><a>I give up ...</a></li>
+      </ul>
+    </nav>
+    <div id="wrapper">
+      <div id="wrapper-background"></div>
+      <div id="quote-wrapper">
+        <form id="quote-game">
+          <h2 id="quote"></h2>
+          <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="row">
+            <input type="text" id="author" autocomplete="off" />
+            <button id="submit"><i class="fas fa-chevron-circle-right"></i></button>
+          </div>
+          <div id="stop"><i class="fas fa-frown-open"></i>I give up ...</div>
+        </form>
+        <div id="final-score-wrapper">
+          <span id="score-title"></span>
+        </div>
+        <div id="randomizer"><span>Keep inspiring me</span></div>
+        <div id="restart-game"><i class="fas fa-redo-alt"></i></div>
+      </div>
+    </div>
+
+    <nav id="progress">
+      <ul>
+        <li data-progress="0" class="active">1</li>
+        <li data-progress="1">2</li>
+        <li data-progress="2">3</li>
+        <li data-progress="3">4</li>
+        <li data-progress="4">5</li>
+      </ul>
+    </nav>
+    <script src="/scripts/functions.js"></script>
+    <script src="/scripts/interactions.js"></script>
+  </body>
+</html>
